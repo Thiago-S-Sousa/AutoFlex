@@ -78,7 +78,7 @@ li > a {
 
 	text-decoration: none;
 
-	border-radius: 5rem;
+	border-radius: 50%;
 }
 
 a > .icon {
@@ -112,4 +112,27 @@ a > .links-cto {
 a > .arrow {
 	font-size: 2rem;
 	color: #000;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 10dvh;
+	width: 100%;
+
+	background-color: #f1f1f1;
+}
+
+.copyright-text {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	width: 90%;
+
+	& span {
+		font-weight: 600;
+	}
 }
