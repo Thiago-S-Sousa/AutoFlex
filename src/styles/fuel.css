@@ -198,7 +198,7 @@ a {
 	text-decoration: none;
 }
 
-#home-btn-fixed {
+a .home-btn-fixed {
 	position: fixed;
 	right: 0;
 	bottom: 0;
