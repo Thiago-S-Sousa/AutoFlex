@@ -26,6 +26,8 @@ closeModal.addEventListener('click', function (event) {
 });
 
 modal.addEventListener('keydown', function (event) {
+	history.pushState(null, '', location.href);
+
 	switch (event.code) {
 		case 'F5':
 		case 'Escape':
