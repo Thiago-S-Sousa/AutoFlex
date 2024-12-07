@@ -21,13 +21,15 @@ inputBtn.addEventListener('click', function (event) {
 closeModal.addEventListener('click', function (event) {
 	event.preventDefault();
 
-	document.documentElement.style.setProperty('--margin', '--margin');
+	// document.documentElement.style.setProperty('--margin', '--margin');
 	modal.close();
 });
 
-modal.addEventListener('keydown', function (event) {
-	history.pushState(null, '', location.href);
+modal.addEventListener('blur', function () {
+	document.documentElement.style.setProperty('--margin', '--margin');
+});
 
+modal.addEventListener('keydown', function (event) {
 	switch (event.code) {
 		case 'F5':
 		case 'Escape':
