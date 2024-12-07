@@ -18,7 +18,7 @@
 					<span>Como funciona?</span>
 					<i class="fa-solid fa-chevron-down arrow"></i>
 				</button>
-				<div class="accordion-body">
+				<aside class="accordion-body">
 					<p>
 						Segundo o padrão estabelecido pelo INMETRO, para
 						determinar se o álcool é mais vantajoso que a gasolina,
@@ -27,7 +27,7 @@
 						menor que 0,7 (ou 70%), o álcool será a opção mais
 						econômica.
 					</p>
-				</div>
+				</aside>
 			</aside>
 
 			<form id="form-fuel">
@@ -47,12 +47,21 @@
 				</aside>
 				<input id="input-btn" type="button" value="Calcular" />
 			</form>
+
 			<footer>
 				<aside class="copyright-text">
 					Copyright &copy; By <span>Thiago Santos</span>
 				</aside>
 			</footer>
 		</section>
+
+		<dialog>
+			<aside class="modal">
+				<span id="modal-result">Resultado : 0,6</span>
+				<p id="modal-text">O Álcool é a opção mais econômica.</p>
+				<i class="fa-solid fa-xmark" id="close-modal"></i>
+			</aside>
+		</dialog>
 
 		<a href="../../index.html" target="_self"
 			><i class="fa-solid fa-house home-btn-fixed"></i
