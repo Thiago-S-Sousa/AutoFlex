@@ -15,7 +15,7 @@ const errorMsgGasoline = document.querySelector('#error-msg-gasoline');
 accordion.addEventListener('click', function (event) {
 	event.preventDefault();
 
-	accordionBody.classList.toggle('active');
+	accordionBody.classList.toggle('inactive');
 });
 
 function validateForm() {
@@ -70,10 +70,10 @@ function getModalCountResult() {
 	const modalCount = alcoolValue / gasolineValue;
 
 	if (modalCount.toFixed(2) == '0.70' || modalCount.toFixed(2) < '0.70') {
-		modalResult.textContent = `Resultado : ${modalCount}`;
+		modalResult.textContent = `Resultado: ${modalCount}`;
 		modalText.textContent = `Abasteça com ÁLCOOL`;
 	} else {
-		modalResult.textContent = `Resultado : ${modalCount}`;
+		modalResult.textContent = `Resultado: ${modalCount}`;
 		modalText.textContent = `Abasteça com GASOLINA`;
 	}
 	return;
