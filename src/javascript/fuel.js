@@ -5,7 +5,6 @@ const buttonInput = document.querySelector('#input-btn');
 const modal = document.querySelector('dialog');
 const closeModal = document.querySelector('#close-modal');
 
-const form = document.querySelector('#form-fuel');
 const alcoolInput = document.querySelector('#alcool');
 const gasolineInput = document.querySelector('#gasoline');
 
@@ -22,9 +21,13 @@ function validateForm() {
 	const alcoolValue = alcoolInput.value;
 	const gasolineValue = gasolineInput.value;
 
-	if (alcoolValue === '' || alcoolValue === null) {
+	if (alcoolValue === '' || alcoolValue === null || alcoolValue <= 0) {
 		buttonInput.disabled = true;
-	} else if (gasolineValue === '' || gasolineValue === null) {
+	} else if (
+		gasolineValue === '' ||
+		gasolineValue === null ||
+		gasolineValue <= 0
+	) {
 		buttonInput.disabled = true;
 	} else {
 		buttonInput.disabled = false;
@@ -70,11 +73,11 @@ function getModalCountResult() {
 	const modalCount = alcoolValue / gasolineValue;
 
 	if (modalCount.toFixed(2) == '0.70' || modalCount.toFixed(2) < '0.70') {
-		modalResult.textContent = `Resultado: ${modalCount}`;
-		modalText.textContent = `Abasteça com ÁLCOOL`;
+		modalResult.textContent = `Resultado: ${modalCount.toFixed(2)}`;
+		modalText.innerHTML = `Abasteça com <br /> ÁLCOOL`;
 	} else {
-		modalResult.textContent = `Resultado: ${modalCount}`;
-		modalText.textContent = `Abasteça com GASOLINA`;
+		modalResult.textContent = `Resultado: ${modalCount.toFixed(2)}`;
+		modalText.innerHTML = `Abasteça com <br /> GASOLINA`;
 	}
 	return;
 }
