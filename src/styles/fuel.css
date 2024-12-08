@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root {
-	--margin: 0;
-}
-
-* {
-	border: 0;
-	margin: var(--margin);
-	padding: 0;
-	box-sizing: border-box;
-}
 
 html {
 	font-size: 62.5%;
@@ -16,6 +6,24 @@ html {
 
 body {
 	font-family: 'Poppins', serif;
+}
+
+body,
+section,
+span,
+aside,
+button,
+i,
+p,
+form,
+label,
+input,
+footer,
+a {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 #fuel {
@@ -156,7 +164,10 @@ body {
 		border: 0.1rem solid rgb(0 0 0 / 0.3);
 	}
 
-	& #error-msg-gasoline {
+	& .error {
+		font-size: 1.2rem;
+		font-weight: 500;
+		padding: 0.5rem 0rem 0rem 0.5rem;
 		color: #ff0000a1;
 	}
 }
@@ -172,45 +183,74 @@ body {
 	border-radius: 5rem;
 
 	cursor: pointer;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#input-btn:disabled {
+	opacity: 0.6;
+	transition: 0.3s;
 }
 
 dialog::backdrop {
 	background-color: #f1f1f1;
+	opacity: 0.7;
 }
 
 dialog {
-	width: 90%;
-
+	border: none;
 	border-radius: 1rem;
-	box-shadow: 0 0 1rem rgb(0 0 0 / 0.4);
+	width: 85%;
+	box-shadow: 0 0 1rem rgb(0 0 0 / 0.6);
+	background-color: transparent;
+	opacity: 0;
+}
+
+dialog[open] {
+	animation: fadein 0.4s ease-in forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		background-color: #fff;
+	}
 }
 
 .modal {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
 
-	min-height: 50dvh;
+	min-height: 40dvh;
 	width: 100%;
 	padding: 0 2rem;
 	text-align: center;
 
-	background-color: #fff;
+	background-color: transparent;
 	border-radius: 1rem;
 }
 
 #modal-result {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #000;
 	opacity: 0.8;
+
+	max-width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #modal-text {
 	font-size: 2.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.1rem;
 	line-height: 1.6;
 	color: #0045b5;

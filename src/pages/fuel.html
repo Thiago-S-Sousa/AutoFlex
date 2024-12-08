@@ -32,20 +32,25 @@
 
 			<form id="form-fuel">
 				<span class="form-title"
-					>Confira qual combustível é mais econômico usando a
-					calculadora álcool x gasolina.
+					>Preencha os campos com o preço e confira qual combustível é
+					mais econômico.
 				</span>
 				<aside class="input-container">
 					<label for="alcool">Preço álcool</label>
-					<input type="number" name="alcool" id="alcool" />
-					<span id="error-msg-alcool"></span>
+					<input type="number" name="alcool" id="alcool" required />
+					<span id="error-msg-alcool" class="error"></span>
 				</aside>
 				<aside class="input-container">
 					<label for="gasoline">Preço gasolina</label>
-					<input type="number" name="gasoline" id="gasoline" />
-					<span id="error-msg-gasoline"></span>
+					<input
+						type="number"
+						name="gasoline"
+						id="gasoline"
+						required
+					/>
+					<span id="error-msg-gasoline" class="error"></span>
 				</aside>
-				<input id="input-btn" type="button" value="Calcular" />
+				<input id="input-btn" type="button" value="Calcular" disabled />
 			</form>
 
 			<footer>
@@ -57,8 +62,8 @@
 
 		<dialog>
 			<aside class="modal">
-				<span id="modal-result">Resultado : 0,6</span>
-				<p id="modal-text">O Álcool é a opção mais econômica.</p>
+				<span id="modal-result"></span>
+				<p id="modal-text"></p>
 				<i class="fa-solid fa-xmark" id="close-modal"></i>
 			</aside>
 		</dialog>
