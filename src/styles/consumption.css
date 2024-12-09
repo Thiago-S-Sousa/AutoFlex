@@ -26,7 +26,7 @@ a {
 	box-sizing: border-box;
 }
 
-#fuel {
+#consumption {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -37,7 +37,7 @@ a {
 	width: 100%;
 	padding: 5rem 0rem 2rem 0rem;
 
-	background-color: #f1f1f1;
+	background-color: #ffb206;
 }
 
 .title {
@@ -47,6 +47,8 @@ a {
 	font-size: 2.4rem;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
+
+	color: #000;
 }
 
 .accordion {
@@ -72,14 +74,14 @@ a {
 		font-weight: 600;
 		font-size: 1.8rem;
 
-		color: #f1f1f1;
+		color: #fff;
 		background-color: transparent;
 	}
 
 	& .arrow {
 		font-size: 1.8rem;
 
-		color: #f1f1f1;
+		color: #fff;
 	}
 }
 
@@ -101,6 +103,10 @@ a {
 
 		color: #000;
 		opacity: 0.8;
+
+		& span {
+			font-weight: 500;
+		}
 	}
 }
 
@@ -118,7 +124,7 @@ a {
 	transform: rotate(180deg);
 }
 
-#form-fuel {
+#form-consumption {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -128,7 +134,7 @@ a {
 	padding: 2.5rem 1rem;
 	width: 90%;
 
-	background-color: transparent;
+	background-color: #f1f1f1;
 
 	border-radius: 1rem;
 	box-shadow: 0 0 1rem rgb(0 0 0 / 0.3);
@@ -175,7 +181,7 @@ a {
 
 #input-btn {
 	background-color: #0045b5;
-	color: #f1f1f1;
+	color: #fff;
 	font-size: 1.8rem;
 	font-weight: 600;
 
@@ -234,19 +240,6 @@ dialog[open] {
 
 	background-color: transparent;
 	border-radius: 1rem;
-}
-
-#modal-result {
-	font-size: 1.6rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #000;
-	opacity: 0.8;
-
-	max-width: 80%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 #modal-text {

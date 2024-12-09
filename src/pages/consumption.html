@@ -4,8 +4,70 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Consumo</title>
+		<script
+			src="https://kit.fontawesome.com/9c7d743b7c.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../styles/consumption.css" />
 	</head>
 	<body>
-		<h1>Consumo</h1>
+		<section id="consumption">
+			<span class="title">Média de KM/L</span>
+			<aside class="accordion">
+				<button class="accordion-header">
+					<span>Como funciona?</span>
+					<i class="fa-solid fa-chevron-up arrow"></i>
+				</button>
+				<aside class="accordion-body">
+					<p>
+						A média de quilômetros por litro (km/l) é uma
+						<span>
+							medida que indica a distância que um veículo
+							consegue percorrer com um litro de combustível.
+						</span>
+						Para calcular a média de km/l, basta dividir a
+						quilometragem rodada pela quantidade de litros
+						abastecidos.
+					</p>
+				</aside>
+			</aside>
+
+			<form id="form-consumption">
+				<span class="form-title"
+					>Preencha os campos e descubra quantos quilômetros seu
+					veículo percorre com um litro de combustível.
+				</span>
+				<aside class="input-container">
+					<label for="km">KM percorrido</label>
+					<input type="number" name="km" id="km" required />
+					<span id="error-msg-km" class="error"></span>
+				</aside>
+				<aside class="input-container">
+					<label for="liters">Litros abastecidos</label>
+					<input type="number" name="liters" id="liters" required />
+					<span id="error-msg-liters" class="error"></span>
+				</aside>
+				<input id="input-btn" type="button" value="Calcular" disabled />
+			</form>
+
+			<footer>
+				<aside class="copyright-text">
+					Copyright &copy; By <span>Thiago Santos</span>
+				</aside>
+			</footer>
+		</section>
+
+		<dialog>
+			<aside class="modal">
+				<p id="modal-text"></p>
+				<i class="fa-solid fa-xmark" id="close-modal"></i>
+			</aside>
+		</dialog>
+
+		<a href="../../index.html" target="_self"
+			><i class="fa-solid fa-house home-btn-fixed"></i
+		></a>
+
+		<script src="../javascript/consumption.js"></script>
 	</body>
 </html>
