@@ -37,7 +37,7 @@ a {
 	width: 100%;
 	padding: 5rem 0rem 2rem 0rem;
 
-	background-color: #ffb206;
+	background-color: #ffc700;
 }
 
 .title {
@@ -147,8 +147,10 @@ a {
 
 		padding: 1.5rem 1rem;
 		border-radius: 1rem;
+		border: 0.1rem solid rgb(0 0 0 / 0.3);
 
-		background-color: #ffc700;
+		color: #0045b5;
+		background-color: transparent;
 	}
 }
 
@@ -159,7 +161,8 @@ a {
 	& label {
 		font-size: 1.4rem;
 		font-weight: 600;
-		color: #0045b5;
+		color: #000;
+		opacity: 0.8;
 		padding: 0.5rem;
 	}
 
@@ -294,6 +297,6 @@ a .home-btn-fixed {
 
 	box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.6);
 	border-radius: 50%;
-	color: #0045b5;
-	background-color: #ffc700;
+	color: #f1f1f1;
+	background-color: #0045b5;
 }
