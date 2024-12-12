@@ -92,7 +92,7 @@ function getModalCountResult() {
 
 	modalText.innerHTML = `O gasto total <br /> 
     com combustível  <br />
-    foi de ${modalCount.toFixed(2)} R$.`;
+    foi de R$${modalCount.toFixed(2)}`;
 	return;
 }
 
