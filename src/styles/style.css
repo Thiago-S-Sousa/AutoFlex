@@ -143,3 +143,66 @@ footer {
 		font-weight: 600;
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	.logo {
+		width: 70%;
+	}
+
+	.navigation {
+		width: 70%;
+	}
+
+	.copyright-text {
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.logo {
+		width: 30%;
+		text-align: start;
+	}
+
+	.logo > h1 {
+		font-size: 3.2rem;
+	}
+
+	.logo > h2 {
+		font-size: 1.8rem;
+	}
+
+	.navigation {
+		width: 30%;
+	}
+
+	li > a {
+		padding: 0.8rem 1rem;
+		transition: 0.4s;
+	}
+
+	li > a:hover {
+		box-shadow: 0 0 1.2rem rgb(0 0 0 / 0.6);
+	}
+
+	a > .icon {
+		font-size: 2rem;
+		padding: 1.8rem;
+	}
+
+	a > .links-cto {
+		font-size: 1.8rem;
+
+		& span {
+			font-size: 1.4rem;
+		}
+	}
+
+	a > .arrow {
+		font-size: 1.8rem;
+	}
+
+	.copyright-text {
+		width: 30%;
+	}
+}
