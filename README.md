@@ -2,17 +2,17 @@
     <img src=".github/homeAutoFlex.png" width="200px">
 </p>
 
-<p align="center">
-    <b>AutoFlex</b>
-</p>
+<h2 align="center">
+    AutoFlex
+</h2>
 
-## O AutoFlex foi projetado para ajudar motoristas casuais e profissionais. Com ele, você poderá identificar qual combustível é mais econômico, qual é a autonomia em quilômetros por litro e qual é o total das suas despesas com combustível
+### O AutoFlex foi projetado para ajudar motoristas casuais e profissionais. Com ele, você poderá identificar qual combustível é mais econômico, qual é a autonomia em quilômetros por litro e qual é o total das suas despesas com combustível
 
-## Foram utilizados JavaScript como linguagem de programação, além de HTML, CSS, Git e GitHub como ferramentas e tecnologias, garantindo desempenho e uma boa experiência para os usuários
+### Foram utilizados JavaScript como linguagem de programação, além de HTML, CSS, Git e GitHub como ferramentas e tecnologias, garantindo desempenho e uma boa experiência para os usuários
 
-## O AutoFlex foi desenvolvido para simplificar a vida dos motoristas. Ele surgiu da necessidade de uma ferramenta prática para gerenciar o consumo e a autonomia de veículo, permitindo economizar tempo e dinheiro com poucos cliques
+### O AutoFlex foi desenvolvido para simplificar a vida dos motoristas. Ele surgiu da necessidade de uma ferramenta prática para gerenciar o consumo e a autonomia de veículo, permitindo economizar tempo e dinheiro com poucos cliques
 
-## Não existem pré-requisitos ou instruções de instalação para utilizar o AutoFlex
+### Não existem pré-requisitos ou instruções de instalação para utilizar o AutoFlex
 
 ## Use o AutoFlex
 
@@ -41,4 +41,4 @@ No final, abra um Pull Request explicando o problema resolvido ou a funcionalida
 
 ## Licença
 
-Copyright © By Thiago Santos. Todos os direitos reservados. Nenhuma parte deste site pode ser reproduzida sem a permissão expressa do detentor e autor
+Copyright © By Thiago Santos. Este projeto está sob a licença [MIT](./../LICENSE) license
