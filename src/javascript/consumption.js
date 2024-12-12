@@ -67,8 +67,9 @@ function getModalCountResult() {
 	const modalCount = kmValue / litersValue;
 
 	modalText.innerHTML = `O seu veículo <br /> 
-    percorre ${modalCount.toFixed(2)} KM <br />
+    percorre ${modalCount.toFixed(1)} KM <br />
     por litro.`;
+	return;
 }
 
 function deleteValue() {
