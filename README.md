@@ -16,7 +16,7 @@
 
 ## Use o AutoFlex
 
-1. Acesse [site AutoFlex](https://thiago-s-sousa.github.io/AutoFlex/)
+1. Acesse o site do[AutoFlex](https://thiago-s-sousa.github.io/AutoFlex/)
 
 2. Na página principal, escolha a opção que melhor atenda às suas necessidades
 
