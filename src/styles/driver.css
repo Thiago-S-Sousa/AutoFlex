@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', serif;
+}
+
+body,
+section,
+span,
+aside,
+button,
+i,
+p,
+form,
+label,
+input,
+footer,
+a {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#driver {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+
+	min-height: 100dvh;
+	width: 100%;
+	padding: 5rem 0rem 2rem 0rem;
+
+	background-color: #77e4f3;
+}
+
+.title {
+	width: 90%;
+
+	text-align: start;
+	font-size: 2.4rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+
+	color: #000;
+}
+
+.accordion {
+	width: 90%;
+	cursor: pointer;
+}
+
+.accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding: 1.5rem;
+
+	border-radius: 1rem;
+	border: 0.1rem solid #d843ac;
+
+	cursor: pointer;
+	background-color: #d843ac;
+
+	& span {
+		font-weight: 600;
+		font-size: 1.8rem;
+
+		color: #fff;
+		background-color: transparent;
+	}
+
+	& .arrow {
+		font-size: 1.8rem;
+
+		color: #fff;
+	}
+}
+
+.accordion-body {
+	display: flex;
+	align-items: center;
+
+	text-align: justify;
+	opacity: 1;
+	height: 100%;
+	overflow: hidden;
+	transition: opacity 0.3s;
+	background-color: transparent;
+	padding: 2.5rem 1rem 4rem 1rem;
+
+	& p {
+		font-size: 1.6rem;
+		line-height: 1.6;
+
+		color: #000;
+		opacity: 0.8;
+
+		& span {
+			font-weight: 500;
+		}
+	}
+}
+
+.accordion-body.inactive {
+	opacity: 0;
+	height: 0;
+	padding: 0;
+}
+
+.arrow {
+	transition: transform 0.2s linear;
+}
+
+.accordion:has(.inactive) .arrow {
+	transform: rotate(180deg);
+}
+
+#form-driver {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+
+	margin-top: 2rem;
+	padding: 2.5rem 1rem;
+	width: 90%;
+
+	background-color: #f5f5f5;
+
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem rgb(0 0 0 / 0.3);
+
+	& .form-title {
+		text-align: justify;
+		font-size: 1.6rem;
+		font-weight: 500;
+		letter-spacing: 0.1rem;
+
+		padding: 1.5rem 1rem;
+		border-radius: 1rem;
+
+		color: #fff;
+		background-color: #000000d3;
+	}
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+
+	& label {
+		font-size: 1.4rem;
+		font-weight: 600;
+		color: #000;
+		opacity: 0.8;
+		padding: 0.5rem;
+	}
+
+	& input {
+		padding-left: 1rem;
+		height: 5rem;
+		width: 100%;
+		border-radius: 1rem;
+		border: 0.1rem solid rgb(0 0 0 / 0.3);
+	}
+
+	& .error {
+		font-size: 1.2rem;
+		font-weight: 500;
+		padding: 0.5rem 0rem 0rem 0.5rem;
+		color: #ff0000a1;
+	}
+}
+
+#input-btn {
+	background-color: #d843ac;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+
+	margin-top: 1rem;
+	padding: 2rem;
+	border-radius: 5rem;
+
+	cursor: pointer;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#input-btn:disabled {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+dialog::backdrop {
+	background-color: #000;
+	opacity: 0.8;
+}
+
+dialog {
+	border: none;
+	border-radius: 1rem;
+	width: 90%;
+	box-shadow: 0 0 1rem #77e4f3;
+	background-color: transparent;
+	opacity: 0;
+}
+
+dialog[open] {
+	animation: fadein 0.4s ease-in forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		background-color: #fff;
+	}
+}
+
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+
+	width: 100%;
+	padding: 2rem 0;
+	text-align: center;
+
+	background-color: transparent;
+	border-radius: 1rem;
+}
+
+#modal-text {
+	font-size: 2.6rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	line-height: 1.6;
+	color: #000;
+}
+
+#close-modal {
+	font-size: 3rem;
+	color: #d843ac;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 2rem;
+	height: 4rem;
+	width: 100%;
+}
+
+.copyright-text {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	width: 90%;
+
+	& span {
+		font-weight: 600;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+a .home-btn-fixed {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+
+	font-size: 2rem;
+	padding: 2rem;
+	margin: 0rem 2rem 5rem 0;
+
+	box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.6);
+	border-radius: 50%;
+	color: #f5f5f5;
+	background-color: #000000e8;
+}

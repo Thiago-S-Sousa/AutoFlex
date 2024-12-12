@@ -4,8 +4,94 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Motorista</title>
+		<script
+			src="https://kit.fontawesome.com/9c7d743b7c.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../styles/driver.css" />
 	</head>
 	<body>
-		<h1>Motorista</h1>
+		<section id="driver">
+			<span class="title"
+				>Gastos com<br />
+				combustível</span
+			>
+			<aside class="accordion">
+				<button class="accordion-header">
+					<span>Como funciona?</span>
+					<i class="fa-solid fa-chevron-up arrow"></i>
+				</button>
+				<aside class="accordion-body">
+					<p>
+						Controlar os gastos com combustível é uma prática que
+						<span>
+							traz diversos benefícios, como a redução de custos,
+							o aumento da lucratividade e a diminuição de riscos
+							financeiros.
+						</span>
+						Além disso, essa medida
+						<span>
+							contribui para a preservação do meio ambiente.
+						</span>
+						Para calcular o gasto total com combustível, basta
+						dividir a distância percorrida pelo consumo médio do
+						veículo (quilômetros por litro) e multiplicar o
+						resultado pelo preço do litro do combustível.
+					</p>
+				</aside>
+			</aside>
+
+			<form id="form-driver">
+				<span class="form-title">
+					Preencha os campos com o preço e verifique o gasto total com
+					combustível.
+				</span>
+				<aside class="input-container">
+					<label for="distance">Distância percorrida (KM)</label>
+					<input
+						type="number"
+						name="distance"
+						id="distance"
+						required
+					/>
+					<span id="error-msg-distance" class="error"></span>
+				</aside>
+				<aside class="input-container">
+					<label for="consumption">Média de consumo (KM/L)</label>
+					<input
+						type="number"
+						name="consumption"
+						id="consumption"
+						required
+					/>
+					<span id="error-msg-consumption" class="error"></span>
+				</aside>
+				<aside class="input-container">
+					<label for="price">Litro do combustível (R$)</label>
+					<input type="number" name="price" id="price" required />
+					<span id="error-msg-price" class="error"></span>
+				</aside>
+				<input id="input-btn" type="button" value="Calcular" disabled />
+			</form>
+
+			<footer>
+				<aside class="copyright-text">
+					Copyright &copy; By <span>Thiago Santos</span>
+				</aside>
+			</footer>
+		</section>
+
+		<dialog>
+			<aside class="modal">
+				<p id="modal-text"></p>
+				<i class="fa-solid fa-xmark" id="close-modal"></i>
+			</aside>
+		</dialog>
+
+		<a href="../../index.html" target="_self"
+			><i class="fa-solid fa-house home-btn-fixed"></i
+		></a>
+
+		<script src="../javascript/driver.js"></script>
 	</body>
 </html>
