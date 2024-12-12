@@ -18,6 +18,8 @@
 
 1. Acesse o site do[AutoFlex](https://thiago-s-sousa.github.io/AutoFlex/)
 
+<img src=".github/totalPage.png" width="300px" heigth="300px">
+
 2. Na página principal, escolha a opção que melhor atenda às suas necessidades
 
 <img src=".github/homePage.png" width="300px" heigth="300px">
