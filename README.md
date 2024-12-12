@@ -20,7 +20,11 @@
 
 2. Na página principal, escolha a opção que melhor atenda às suas necessidades
 
+<img src=".github/homePage.png" width="300px" heigth="300px">
+
 3. Preencha os campos do formulário conforme as especificações
+
+<img src=".github/formulario.png" width="300px" heigth="300px">
 
 ## Colaboradores
 
