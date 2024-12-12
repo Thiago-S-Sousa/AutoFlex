@@ -22,6 +22,21 @@
 
 3. Preencha os campos do formulário conforme as especificações
 
+## Colaboradores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/128821560?v=4" width="100px;" alt="Thiago Santos Profile Picture"/><br>
+        <sub>
+          <b>Thiago Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Contribuir
 
 Se você quiser contribuir, clone este repositório, crie sua própria branch de trabalho e mãos à obra!
