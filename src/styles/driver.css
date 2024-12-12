@@ -53,7 +53,6 @@ a {
 
 .accordion {
 	width: 90%;
-	cursor: pointer;
 }
 
 .accordion-header {
@@ -296,6 +295,91 @@ a .home-btn-fixed {
 
 	box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.6);
 	border-radius: 50%;
-	color: #000;
+	color: #0045b5;
 	background-color: #ffc700;
+}
+
+@media only screen and (min-width: 768px) {
+	.title {
+		width: 70%;
+	}
+
+	.accordion {
+		width: 70%;
+	}
+
+	#form-driver {
+		width: 70%;
+	}
+
+	dialog {
+		width: 80%;
+	}
+
+	a .home-btn-fixed {
+		font-size: 1.8rem;
+		padding: 1.8rem;
+		margin: 0rem 15% 2rem 0;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#driver {
+		padding: 8rem 0rem 2rem 0rem;
+	}
+
+	.title {
+		width: 40%;
+	}
+
+	.accordion {
+		width: 40%;
+		cursor: pointer;
+	}
+
+	.accordion-header {
+		transition: 0.4s;
+
+		& span {
+			font-size: 1.6rem;
+		}
+
+		& .arrow {
+			font-size: 1.6rem;
+		}
+	}
+	.accordion-header:hover {
+		box-shadow: 0 0 1rem rgb(0 0 0 / 0.4);
+	}
+
+	.accordion-body {
+		padding: 3.5rem 1rem 4rem 1rem;
+	}
+
+	#form-driver {
+		width: 40%;
+	}
+
+	#input-btn:disabled {
+		cursor: default;
+	}
+
+	#input-btn:not(:disabled):hover {
+		box-shadow: 0 0 1rem rgb(0 0 0 / 0.4);
+	}
+
+	dialog {
+		width: 50%;
+	}
+
+	a .home-btn-fixed {
+		font-size: 1.8rem;
+		padding: 1.8rem;
+		margin: 0rem 30% 2rem 0;
+		transition: 0.2s;
+	}
+
+	a .home-btn-fixed:hover {
+		box-shadow: 0 0 1rem rgb(0 0 0 / 0.6);
+	}
 }
