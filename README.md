@@ -10,7 +10,7 @@
 
 ### Foram utilizados JavaScript como linguagem de programação, além de HTML, CSS, Git e GitHub como ferramentas e tecnologias, garantindo desempenho e uma boa experiência para os usuários
 
-### O AutoFlex foi desenvolvido para simplificar a vida dos motoristas. Ele surgiu da necessidade de uma ferramenta prática para gerenciar o consumo e a autonomia de veículo, permitindo economizar tempo e dinheiro com poucos cliques
+### Seu desenvolvimento ocorreu a partir da necessidade de uma ferramenta prática para gerenciar o consumo e a autonomia de veículos, permitindo economizar tempo e dinheiro com facilidade e poucos cliques
 
 ### Não existem pré-requisitos ou instruções de instalação para utilizar o AutoFlex
 
