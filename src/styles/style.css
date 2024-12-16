@@ -173,6 +173,11 @@ footer {
 	}
 
 	.navigation {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 1.5rem;
+
 		width: 30%;
 	}
 
