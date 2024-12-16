@@ -34,30 +34,34 @@ function validateForm() {
 kmInput.addEventListener('input', validateForm);
 litersInput.addEventListener('input', validateForm);
 
-function errorkm() {
+function errorKm() {
 	const kmValue = kmInput.value;
 
-	if (kmValue === '' || kmValue === null) {
+	if (kmValue === '') {
 		errorMsgkm.textContent = 'Campo obrigatório!';
+	} else if (kmValue <= 0 || kmValue === null) {
+		errorMsgkm.textContent = 'Valor inválido!';
 	} else {
 		errorMsgkm.textContent = '';
 	}
 	return;
 }
 
-function errorliters() {
+function errorLiters() {
 	const litersValue = litersInput.value;
 
-	if (litersValue === '' || litersValue === null) {
+	if (litersValue === '') {
 		errorMsgliters.textContent = 'Campo obrigatório!';
+	} else if (litersValue <= 0 || litersValue === null) {
+		errorMsgliters.textContent = 'Valor inválido!';
 	} else {
 		errorMsgliters.textContent = '';
 	}
 	return;
 }
 
-kmInput.addEventListener('input', errorkm);
-litersInput.addEventListener('input', errorliters);
+kmInput.addEventListener('input', errorKm);
+litersInput.addEventListener('input', errorLiters);
 
 function getModalCountResult() {
 	const kmValue = kmInput.value;

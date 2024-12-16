@@ -47,8 +47,10 @@ priceInput.addEventListener('input', validateForm);
 function errorDistance() {
 	const distanceValue = distanceInput.value;
 
-	if (distanceValue === '' || distanceValue === null) {
+	if (distanceValue === '') {
 		errorMsgdistance.textContent = 'Campo obrigatório!';
+	} else if (distanceValue <= 0 || distanceValue === null) {
+		errorMsgdistance.textContent = 'Valor inválido!';
 	} else {
 		errorMsgdistance.textContent = '';
 	}
@@ -58,8 +60,10 @@ function errorDistance() {
 function errorConsumption() {
 	const consumptionValue = consumptionInput.value;
 
-	if (consumptionValue === '' || consumptionValue === null) {
+	if (consumptionValue === '') {
 		errorMsgConsumption.textContent = 'Campo obrigatório!';
+	} else if (consumptionValue <= 0 || consumptionValue === null) {
+		errorMsgConsumption.textContent = 'Valor inválido!';
 	} else {
 		errorMsgConsumption.textContent = '';
 	}
@@ -69,8 +73,10 @@ function errorConsumption() {
 function errorPrice() {
 	const priceValue = priceInput.value;
 
-	if (priceValue === '' || priceValue === null) {
+	if (priceValue === '') {
 		errorMsgPrice.textContent = 'Campo obrigatório!';
+	} else if (priceValue <= 0 || priceValue === null) {
+		errorMsgPrice.textContent = 'Valor inválido!';
 	} else {
 		errorMsgPrice.textContent = '';
 	}

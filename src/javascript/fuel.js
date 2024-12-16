@@ -41,8 +41,10 @@ gasolineInput.addEventListener('input', validateForm);
 function errorAlcool() {
 	const alcoolValue = alcoolInput.value;
 
-	if (alcoolValue === '' || alcoolValue === null) {
+	if (alcoolValue === '') {
 		errorMsgAlcool.textContent = 'Campo obrigatório!';
+	} else if (alcoolValue <= 0 || alcoolValue === null) {
+		errorMsgAlcool.textContent = 'Valor inválido!';
 	} else {
 		errorMsgAlcool.textContent = '';
 	}
@@ -52,8 +54,10 @@ function errorAlcool() {
 function errorGasoline() {
 	const gasolineValue = gasolineInput.value;
 
-	if (gasolineValue === '' || gasolineValue === null) {
+	if (gasolineValue === '') {
 		errorMsgGasoline.textContent = 'Campo obrigatório!';
+	} else if (gasolineValue <= 0 || gasolineValue === null) {
+		errorMsgGasoline.textContent = 'Valor inválido!';
 	} else {
 		errorMsgGasoline.textContent = '';
 	}
