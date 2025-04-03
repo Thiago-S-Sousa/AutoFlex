@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Auto Flex</title>
-		<script
-			src="https://kit.fontawesome.com/9c7d743b7c.js"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="shortcut icon"
-			href="./src/images/fuel.jpeg"
-			type="image/x-icon"
-		/>
-		<link rel="stylesheet" href="./src/styles/style.css" />
-	</head>
-	<body>
-		<main>
-			<section class="logo">
-				<h1>Auto Flex</h1>
-				<h2>Você no Controle</h2>
-			</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Flex</title>
+    <script
+      src="https://kit.fontawesome.com/9c7d743b7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./src/images/fuel.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <aside class="logo">
+        <i class="fa-solid fa-gas-pump"></i>
+        <span class="box-logo"
+          ><h1>Auto</h1>
+          <h2>Flex</h2>
+        </span>
+      </aside>
 
-			<nav class="navigation">
-				<li>
-					<a href="./src/pages/fuel.html" target="_self">
-						<i class="fa-solid fa-gas-pump icon"></i>
-						<aside class="links-cto">
-							Combustível
-							<span>Álcool ou Gasolina?</span>
-						</aside>
-						<i class="fa-solid fa-caret-right arrow"></i>
-					</a>
-				</li>
-				<li>
-					<a href="./src/pages/consumption.html" target="_self">
-						<i class="fa-solid fa-faucet-drip icon"></i>
-						<aside class="links-cto">
-							Consumo
-							<span>Média de KM/L</span>
-						</aside>
-						<i class="fa-solid fa-caret-right arrow"></i>
-					</a>
-				</li>
-				<li>
-					<a href="./src/pages/driver.html" target="_self">
-						<i class="fa-solid fa-comment-dollar icon"></i>
-						<aside class="links-cto">
-							Despesas
-							<span>Com combustível</span>
-						</aside>
-						<i class="fa-solid fa-caret-right arrow"></i>
-					</a>
-				</li>
-			</nav>
-		</main>
-		<footer>
-			<aside class="copyright-text">
-				Copyright &copy; By <span>Thiago Santos</span>
-			</aside>
-		</footer>
-	</body>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="./src/pages/fuel.html">Combustível</a></li>
+          <li><a href="./src/pages/consumption.html">Média</a></li>
+          <li><a href="./src/pages/driver.html">Despesas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <aside class="box-banner">
+          <span
+            >Controle seus gastos, descubra o combustível mais econômico,
+            calcule a autonomia do seu veículo e gerencie suas despesas com
+            precisão</span
+          >
+          <p>
+            Controle seu consumo com o AutoFlex, economize<br />tempo e dinheiro
+            com poucos cliques
+          </p>
+          <a href="#services">Calcule agora</a>
+        </aside>
+      </section>
+      <section class="services" id="services">
+        <a href="./src/pages/fuel.html" target="_self" class="card" id="fuel">
+          <aside class="box-services">
+            <i class="fa-solid fa-gas-pump icon"></i>
+            <span>Combustível<br />Álcool ou Gasolina?</span>
+            <p>Calcule</p>
+          </aside>
+        </a>
+        <a
+          href="./src/pages/consumption.html"
+          target="_self"
+          class="card"
+          id="consumption"
+        >
+          <aside class="box-services">
+            <i class="fa-solid fa-faucet-drip icon"></i>
+            <span>Consumo<br />Média de KM/L</span>
+            <p>Calcule</p>
+          </aside>
+        </a>
+        <a
+          href="./src/pages/driver.html"
+          target="_self"
+          class="card"
+          id="driver"
+        >
+          <aside class="box-services">
+            <i class="fa-solid fa-comment-dollar icon"></i>
+            <span>Despesas<br />Com combustível</span>
+            <p>Calcule</p>
+          </aside>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
