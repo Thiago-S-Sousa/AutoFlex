@@ -281,12 +281,9 @@ footer {
       font-weight: 600;
       padding-left: 1rem;
       color: #000;
+      text-decoration: underline;
     }
   }
-}
-
-a {
-  text-decoration: none;
 }
 
 a .home-btn-fixed {
@@ -325,6 +322,14 @@ a .home-btn-fixed {
     font-size: 1.8rem;
     padding: 1.8rem;
     margin: 0rem 15% 2rem 0;
+  }
+
+  footer {
+    .copy {
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }
 
