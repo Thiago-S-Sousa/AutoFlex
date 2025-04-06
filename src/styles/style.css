@@ -10,6 +10,44 @@
 
 html {
   font-size: 62.5%;
+
+  /* ----- ANIMATIONS ----- */
+
+  & .top-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translatey(-100%);
+    transition: ease 1.5s;
+  }
+
+  & .bottom-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translatey(50%);
+    transition: ease 1.5s;
+  }
+
+  & .left-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    /* transform: translateX(-5%); */
+    transition: ease 1.5s;
+  }
+
+  & .right-hidden {
+    opacity: 0;
+    filter: blur(6px);
+    /* transform: translateX(5%); */
+    transition: ease 1.5s;
+  }
+
+  & .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translatey(0);
+    transition: ease 1.5s;
+  }
 }
 
 body {
@@ -277,9 +315,7 @@ body {
 
     & main {
       & .banner {
-        height: calc(90dvh - 8rem);
         & .box-banner {
-          height: calc(90dvh - 8rem);
           padding: 0 4rem;
           text-align: left;
 

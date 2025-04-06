@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <aside class="logo">
+      <aside class="logo left-hidden">
         <i class="fa-solid fa-gas-pump"></i>
         <span class="box-logo"
           ><h1>Auto</h1>
@@ -25,7 +25,7 @@
         </span>
       </aside>
 
-      <nav class="nav-list">
+      <nav class="nav-list top-hidden">
         <ul>
           <li><a href="./src/pages/fuel.html">Combustível</a></li>
           <li><a href="./src/pages/consumption.html">Média</a></li>
@@ -36,24 +36,26 @@
     <main>
       <section class="banner">
         <aside class="box-banner">
-          <span
+          <span class="bottom-hidden"
             >Controle seus gastos, descubra o combustível mais econômico,
             calcule a autonomia do seu veículo e gerencie suas despesas com
             precisão</span
           >
-          <p>
+          <p class="left-hidden">
             Monitore seu consumo com o AutoFlex, economize<br />tempo e dinheiro
             com poucos cliques
           </p>
-          <a href="#services">Calcule agora</a>
+          <a href="#services" class="left-hidden">Calcule agora</a>
         </aside>
       </section>
       <section class="services" id="services">
         <a href="./src/pages/fuel.html" target="_self" class="card" id="fuel">
           <aside class="box-services">
-            <i class="fa-solid fa-gas-pump icon"></i>
-            <span>Combustível<br />Álcool ou Gasolina?</span>
-            <p>Calcular</p>
+            <i class="fa-solid fa-gas-pump icon left-hidden"></i>
+            <span class="bottom-hidden"
+              >Combustível<br />Álcool ou Gasolina?</span
+            >
+            <p class="bottom-hidden">Calcular</p>
           </aside>
         </a>
         <a
@@ -63,9 +65,9 @@
           id="consumption"
         >
           <aside class="box-services">
-            <i class="fa-solid fa-faucet-drip icon"></i>
-            <span>Consumo<br />Média de KM/L</span>
-            <p>Calcular</p>
+            <i class="fa-solid fa-faucet-drip icon left-hidden"></i>
+            <span class="bottom-hidden">Consumo<br />Média de KM/L</span>
+            <p class="bottom-hidden">Calcular</p>
           </aside>
         </a>
         <a
@@ -75,16 +77,16 @@
           id="driver"
         >
           <aside class="box-services">
-            <i class="fa-solid fa-comment-dollar icon"></i>
-            <span>Despesas<br />Com combustível</span>
-            <p>Calcular</p>
+            <i class="fa-solid fa-comment-dollar icon left-hidden"></i>
+            <span class="bottom-hidden">Despesas<br />Com combustível</span>
+            <p class="bottom-hidden">Calcular</p>
           </aside>
         </a>
       </section>
     </main>
     <footer class="footer">
       <p id="copyright-text"></p>
-      <ul class="list-links">
+      <ul class="list-links bottom-hidden">
         <li>
           <a href="https://www.instagram.com/bythiagosantos/" target="_blank"
             ><i class="fa-brands fa-instagram"></i
